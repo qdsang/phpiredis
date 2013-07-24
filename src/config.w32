@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("phpiredis", "for phpiredis support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("phpiredis", "enable phpiredis support", "no");
+
+if (PHP_PHPIREDIS != "no") {
+	EXTENSION("phpiredis", "phpiredis.c");
+}
+
